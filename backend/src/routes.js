@@ -1,4 +1,5 @@
 const express = require("express");
+
 const SessionController = require("./app/controllers/SessionController");
 const SpotController = require("./app/controllers/SpotController");
 
