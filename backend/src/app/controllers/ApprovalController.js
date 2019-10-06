@@ -13,7 +13,7 @@ module.exports = {
     const bookingUserSocket = req.connectedUsers[booking.user];
 
     if (bookingUserSocket) {
-      req.io.to(ownerSocket).emit("booking_response", booking);
+      req.io.to(bookingUserSocket).emit("booking_response", booking);
     }
 
     return res.json(booking);
